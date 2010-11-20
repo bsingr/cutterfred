@@ -1,4 +1,4 @@
-# CutterFred **DEMO**
+# CutterFred DEMO
 
 ## What?!
 
@@ -22,3 +22,7 @@ Another useless try to structur clientside javascript apps.
 	$ rake watch
 	
 then just code..
+
+## Watch
+
+	$ open public/index.html
