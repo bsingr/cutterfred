@@ -1,0 +1,17 @@
+// bundled_path: public/javascripts/bundled.js
+// compressed_path: public/javascripts/compressed.js
+// vendor_dir: public/javascripts/vendor
+
+/ start adding your requirements below:
+
+jquery 1.4.2
+js-model 0.9.3
+uki 0.3.8
+sammy 0.6.2
+
+src/models/message
+
+src/views/layouts
+src/views/layouts/main
+
+src/app
