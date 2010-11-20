@@ -11,7 +11,8 @@ sammy 0.6.2
 
 src/models/message
 
-src/views/layouts
+src/views/include
 src/views/layouts/main
+src/views/messages/new
 
 src/app
