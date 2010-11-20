@@ -2,7 +2,10 @@ var AppController = Sammy("#app", function(app){
 	app.get("#!/", function(ctx){
 		Views.renderLayout("main");
 		Views.renderPartial("#action-panel", "messages/new");
-		
+		uki("#messages").bind("dblclick", function(){
+			var idx = this._selectedIndexes[0];
+			app.runRoute("delete", "#!/messages/"+idx);
+		});
 		uki("#hello").bind("click", function(){
 			var text = uki("#message").value();
 			uki("#message").value("");
@@ -13,6 +16,9 @@ var AppController = Sammy("#app", function(app){
 		var message = new Message();
 		message.attr("text", ctx.params.text);
 		message.save();	
+	});
+	app.del("#!/messages/:id", function(ctx){
+		uki("#messages").removeRow(ctx.params.id);
 	});
 	
     app.bind("add-message", function(e,data){
