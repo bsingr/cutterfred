@@ -1,4 +1,4 @@
-# CutterFred
+# CutterFred **DEMO**
 
 ## What?!
 
